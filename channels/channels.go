@@ -34,4 +34,11 @@ func main() {
 	*/
 	msg := <-messages
 	fmt.Println(msg)
+
+	/*
+		By default sends and receives block until both the sender and receiver are ready.
+		This property allowed us to wait at the end of our program for the "ping" message without having to use any other synchronization.
+		기본적으로 보내고 받는 것은 발신자와 수신자 모두가 준비될 때까지 block 된다.
+		이 속성은 다른 동기화를 사용하지 않고도 프로그램 끝에서 "ping" 메시지를 기다릴 수 있게 해 주었다.
+	*/
 }
