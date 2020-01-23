@@ -47,6 +47,7 @@ func main() {
 	<-done
 
 	/*
+		If you removed the <- done line from this program, the program would exit before the worker even started.
 		만약에 <-done 라인을 이 프로그램에서 삭제하면, 프로그램은 worker 가 실행 되기도 전에 끝날것임.
 	*/
 }
