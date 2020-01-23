@@ -88,6 +88,8 @@ func main() {
 	/*
 		If you want to programmatically use the data in a custom error,
 		you'll need to get the error as an instance of the custom error type via type assertion.
+		프로그램적으로 커스텀 에러 내에 데이터를 사용하고 싶다면,
+		타입 단언을 통해 에러를 커스텀 에러의 인스턴스처럼 얻는 것이 필요할 거임
 	*/
 	_, e := f2(42)
 	if ae, ok := e.(*argError); ok {
