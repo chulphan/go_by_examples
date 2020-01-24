@@ -61,6 +61,6 @@ func main() {
 
 	/*
 		Running this program shows the first operation timing out and the second succeeding.
-		이 프로그램을 실행하는 것은 첫번째는 timing out을 연산하는 것을 두번째는 성공한 것을 보여준다.
+		이 프로그램을 실행하는 것은 첫번째는 timing out을 연산하는 두번째는 성공한 것을 보여준다.
 	*/
 }
