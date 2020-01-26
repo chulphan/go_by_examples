@@ -56,4 +56,9 @@ func main() {
 		모든 worker들은 그들이 끝날때 통지 받는다.
 	*/
 	wg.Wait()
+
+	/*
+		The order of workers starting up and finishing is likely to be different for each invocation.
+		worker들의 시작하는 것과 끝나는 것의 순서는 각 호출마다 달라질 수 있다.
+	*/
 }
