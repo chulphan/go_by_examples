@@ -61,4 +61,13 @@ func main() {
 		atomic.LoadUint64 과 같은 기능을 이용해서 그들이 업데이트 되는 동안에도 atomic을 안전하게 읽을 수 있다.
 	*/
 	fmt.Println("ops: ", ops)
+
+	/*
+		We expect to get exactly 50,000 operations.
+		Had we used the non-atomic ops++ to increment the counter, we'd likely get a different number, changing between runs, because the goroutines would interfere with each other.
+		Moreover, we'd get data race failure when running with the -race flag.
+		우리는 정확히 50,000 연산들을 얻는다.
+		만약 우리가 카운터를 증가시키기 위해 원자가 아닌 ops++를 사용했다면, 우리는 다른 숫자를 얻게 될 것이다. 왜냐하면 고루틴들이 서로 간섭하기 때문이다.
+		게다가 우리가 -race flag와 함께 실행을 시킬때 데이터 경주를 얻는데에 실패할 것이다(?)
+	*/
 }
