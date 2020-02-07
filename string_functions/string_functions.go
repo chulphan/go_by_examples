@@ -52,7 +52,9 @@ func main() {
 	/*
 		Note that 'len' and indexing above work at the byte level. Go uses 'UTF-8' encoded strings, so this is often useful as-is.
 		If you’re working with potentially multi-byte characters you’ll want to use encoding-aware operations.
+		See strings, bytes, runes and characters in Go for more information.
 		byte 수준에서 위처럼 len 과 인덱싱을 하는것에 유의해라. Go 는 UTF-8로 인코딩 된 문자열을 사용하기 때문에 이건 종종 유용하다.
 		잠재적으로 multi-byte 문자들을 사용하는 경우 인코딩 인식 작업을 사용할 수 있다.
+		더 많은 정보를 보려면 strings, bytes, runes and characters in Go(https://blog.golang.org/strings) 를 봐라..
 	*/
 }
